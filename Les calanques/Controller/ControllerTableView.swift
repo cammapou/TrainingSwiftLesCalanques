@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ControllerTableView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var calanques: [Calanque] = []
@@ -39,6 +41,15 @@ class ControllerTableView: UIViewController, UITableViewDelegate, UITableViewDat
         return 200
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueId, sender: calanques[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueId, let vc = segue.destination as? DetailsViewController {
+            vc.calanques = sender as? Calanque
+            }
+    }
 
     /*
     // MARK: - Navigation

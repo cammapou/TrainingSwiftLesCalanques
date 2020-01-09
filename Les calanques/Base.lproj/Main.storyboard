@@ -24,11 +24,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-KT-uEc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-KT-uEc">
                                 <rect key="frame" x="10" y="136" width="394" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="alternative" rowHeight="200" id="1bh-Pp-ddi" customClass="CalanqueViewCellAlternative" customModule="Les_calanques" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="alternative" rowHeight="200" id="1bh-Pp-ddi" customClass="CalanqueViewCellAlternative" customModule="Les_calanques" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="394" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1bh-Pp-ddi" id="DT2-Mh-vX2">
@@ -154,12 +154,12 @@
         <scene sceneID="4DB-P2-KbV">
             <objects>
                 <tableViewController id="uIj-nZ-YmO" customClass="TableViewController" customModule="Les_calanques" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WRR-a8-RXQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WRR-a8-RXQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Rpb-oQ-tlY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Rpb-oQ-tlY">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rpb-oQ-tlY" id="DNf-Yh-Ua3">
@@ -226,7 +226,13 @@
                             <outlet property="delegate" destination="uIj-nZ-YmO" id="Nam-wO-8x4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="27e-Wq-hR7"/>
+                    <navigationItem key="navigationItem" id="27e-Wq-hR7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="reload" id="q4o-nj-3Wl">
+                            <connections>
+                                <action selector="reloadImage:" destination="uIj-nZ-YmO" id="Qqk-ii-2lf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Xbw-mW-BKX" kind="show" identifier="Details" id="q2s-t7-uyK"/>
                     </connections>
@@ -342,6 +348,7 @@
         <image name="callelongue" width="1600" height="1066"/>
         <image name="earth" width="32" height="32"/>
         <image name="list" width="32" height="32"/>
+        <image name="reload" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="x6c-VZ-Y3k"/>

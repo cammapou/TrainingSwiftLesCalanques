@@ -21,7 +21,7 @@ class DetailsViewController: UIViewController {
         
         imageCalanque.image = calanque.image
         
-        let mutable = NSMutableAttributedString(string: calanque.nom,
+        let mutable = NSMutableAttributedString(string: calanque.nom + "\n\n",
                                                 attributes: [
                                                     .foregroundColor: UIColor.red,
                                                     .font: UIFont.boldSystemFont(ofSize: 20)])
@@ -29,6 +29,9 @@ class DetailsViewController: UIViewController {
                                           attributes: [
                                             .foregroundColor: UIColor.darkGray,
                                             .font: UIFont.systemFont(ofSize: 17)]))
+        descriptionCalanque.attributedText = mutable
+        descriptionCalanque.textAlignment = .center
     }
+    
    
 }
