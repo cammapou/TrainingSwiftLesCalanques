@@ -27,7 +27,7 @@ class CalanquesTableViewCell: UITableViewCell {
 
     func setupCell(_ calanque: Calanque) {
         self.calanque = calanque
-        containerView.backgroundColor = .lightGray
+        containerView.backgroundColor = .white
         containerView.layer.cornerRadius = 20
         containerCell.layer.cornerRadius = 20
         containerCell.layer.shadowOffset = CGSize(width: 5, height: 5)

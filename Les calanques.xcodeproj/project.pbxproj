@@ -19,6 +19,7 @@
 		824E1B7B23C7880F0081B414 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7A23C7880F0081B414 /* TableViewController.swift */; };
 		824E1B7D23C790D20081B414 /* CalanquesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7C23C790D20081B414 /* CalanquesTableViewCell.swift */; };
 		824E1B7F23C797FE0081B414 /* imageRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7E23C797FE0081B414 /* imageRound.swift */; };
+		824E1B8123C7A49C0081B414 /* CalanqueViewCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B8023C7A49C0081B414 /* CalanqueViewCellAlternative.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		824E1B7A23C7880F0081B414 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		824E1B7C23C790D20081B414 /* CalanquesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanquesTableViewCell.swift; sourceTree = "<group>"; };
 		824E1B7E23C797FE0081B414 /* imageRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageRound.swift; sourceTree = "<group>"; };
+		824E1B8023C7A49C0081B414 /* CalanqueViewCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueViewCellAlternative.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				824E1B7C23C790D20081B414 /* CalanquesTableViewCell.swift */,
 				824E1B7E23C797FE0081B414 /* imageRound.swift */,
+				824E1B8023C7A49C0081B414 /* CalanqueViewCellAlternative.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				824E1B5A23C777900081B414 /* AppDelegate.swift in Sources */,
 				824E1B5C23C777900081B414 /* SceneDelegate.swift in Sources */,
 				824E1B7523C786AE0081B414 /* CalanqueCollection.swift in Sources */,
+				824E1B8123C7A49C0081B414 /* CalanqueViewCellAlternative.swift in Sources */,
 				824E1B7D23C790D20081B414 /* CalanquesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
