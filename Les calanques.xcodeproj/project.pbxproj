@@ -17,6 +17,8 @@
 		824E1B7723C787E60081B414 /* ControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7623C787E60081B414 /* ControllerTableView.swift */; };
 		824E1B7923C787FA0081B414 /* ControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7823C787FA0081B414 /* ControllerMap.swift */; };
 		824E1B7B23C7880F0081B414 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7A23C7880F0081B414 /* TableViewController.swift */; };
+		824E1B7D23C790D20081B414 /* CalanquesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7C23C790D20081B414 /* CalanquesTableViewCell.swift */; };
+		824E1B7F23C797FE0081B414 /* imageRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1B7E23C797FE0081B414 /* imageRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		824E1B7623C787E60081B414 /* ControllerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerTableView.swift; sourceTree = "<group>"; };
 		824E1B7823C787FA0081B414 /* ControllerMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMap.swift; sourceTree = "<group>"; };
 		824E1B7A23C7880F0081B414 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		824E1B7C23C790D20081B414 /* CalanquesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanquesTableViewCell.swift; sourceTree = "<group>"; };
+		824E1B7E23C797FE0081B414 /* imageRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageRound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		824E1B7023C77CB90081B414 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				824E1B7C23C790D20081B414 /* CalanquesTableViewCell.swift */,
+				824E1B7E23C797FE0081B414 /* imageRound.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,10 +183,12 @@
 				824E1B7923C787FA0081B414 /* ControllerMap.swift in Sources */,
 				824E1B7B23C7880F0081B414 /* TableViewController.swift in Sources */,
 				824E1B7323C780F00081B414 /* calanques.swift in Sources */,
+				824E1B7F23C797FE0081B414 /* imageRound.swift in Sources */,
 				824E1B7723C787E60081B414 /* ControllerTableView.swift in Sources */,
 				824E1B5A23C777900081B414 /* AppDelegate.swift in Sources */,
 				824E1B5C23C777900081B414 /* SceneDelegate.swift in Sources */,
 				824E1B7523C786AE0081B414 /* CalanqueCollection.swift in Sources */,
+				824E1B7D23C790D20081B414 /* CalanquesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
